@@ -5,6 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Stylish File</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <main class="page">
+      <div class="card">
+        <h1 class="title">Say Hello!</h1>
+        <form action="https://www.google.co.uk/">
+          <label class="label">
+            Your Name:
+            <input
+              class="text-box"
+              id="username"
+              type="text"
+              placeholder="Enter your name"
+              required
+            />
+          </label>
+          <label class="label">
+            Email:
+            <input
+              class="text-box"
+              id="emaiil"
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </label>
+          <label class="label">
+            Needed Services:
+            <select
+              class="text-box"
+              name="services"
+              id="services"
+              placeholder="Choose service"
+              required
+            >
+              <option value="" disabled selected hidden
+                >Choose a service</option
+              >
+              <option value="hamster-petting">Hamster Petting</option>
+              <option value="soup-slurping">Soup Slurping</option>
+              <option value="big-bad-wolf-chasing">Big Bad Wolf Chasing</option>
+              <option value="rubber-duck-polishing"
+                >Rubber Duck Polishing</option
+              >
+              <option value="potatoes">Potatoes</option>
+            </select>
+          </label>
+          <label class="label" placeholder="£">
+            Budget:
+            <input
+              class="text-box"
+              id="budget"
+              type="number"
+              required
+              min="10"
+              max="1000"
+              placeholder="£"
+            />
+          </label>
+          <label class="label">
+            Messsage:
+            <textarea
+              class="text-box text-area"
+              id="message"
+              type="text"
+              required
+              spellcheck="true"
+              maxlength="250"
+              placeholder="e.g 'Make sure my hamster gets a little glass of freshly squeezed orange juice'"
+            ></textarea>
+          </label>
+          <div class="label submit">
+            <button class="button" type="submit" required>
+              <p>Submit</p>
+              <img src="assets/thumbs.svg" alt="" />
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
